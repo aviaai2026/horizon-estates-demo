@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizon Estates | Find Your Next Home</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #172033;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 8%;
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .logo { font-size: 22px; font-weight: 800; }
+    nav { display: flex; gap: 24px; }
+    nav a { color: #475569; text-decoration: none; }
+
+    .hero {
+      padding: 100px 8%;
+      background: linear-gradient(120deg, #142b40, #275a65);
+      color: white;
+    }
+
+    .hero h1 {
+      max-width: 650px;
+      font-size: clamp(36px, 5vw, 64px);
+      line-height: 1.1;
+      margin: 0 0 20px;
+    }
+
+    .hero p {
+      max-width: 520px;
+      color: #d6e5e8;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    main { padding: 60px 8%; }
+    main h2 { font-size: 30px; }
+
+    .properties {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .property {
+      overflow: hidden;
+      border-radius: 16px;
+      background: white;
+      border: 1px solid #e5e7eb;
+    }
+
+    .property-image {
+      height: 170px;
+      background: linear-gradient(135deg, #bed8d8, #6c969a);
+    }
+
+    .property-content { padding: 22px; }
+    .property h3 { margin: 0 0 10px; }
+    .property p { color: #64748b; }
+
+    footer {
+      margin-top: 60px;
+      padding: 30px 8%;
+      background: #172033;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      nav { display: none; }
+      .hero { padding: 70px 8%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Horizon Estates</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#properties">Properties</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Find a place you'll love calling home.</h1>
+    <p>
+      Discover quality homes and investment opportunities.
+      Our property team is ready to help you find the right fit.
+    </p>
+  </section>
+
+  <main id="properties">
+    <h2>Featured Properties</h2>
+    <p>Explore a selection of homes available through our agency.</p>
+
+    <div class="properties">
+      <article class="property">
+        <div class="property-image"></div>
+        <div class="property-content">
+          <h3>Modern Family Home</h3>
+          <p>4 bedrooms · Kano</p>
+        </div>
+      </article>
+
+      <article class="property">
+        <div class="property-image"></div>
+        <div class="property-content">
+          <h3>Contemporary Apartment</h3>
+          <p>3 bedrooms · Abuja</p>
+        </div>
+      </article>
+
+      <article class="property">
+        <div class="property-image"></div>
+        <div class="property-content">
+          <h3>Luxury Villa</h3>
+          <p>5 bedrooms · Lagos</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer id="contact">
+    Horizon Estates · Demo website for AVIA.AI integration testing
+  </footer>
+
+</body>
+</html>
